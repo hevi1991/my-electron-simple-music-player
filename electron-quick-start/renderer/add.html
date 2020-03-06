@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electron 音乐播放器</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-4">添加音乐到曲库</h1>
+      <div id="music-list" class="mb-2">
+        您还未选择任何音乐文件
+      </div>
+      <button
+        id="select-music-button"
+        type="button"
+        class="btn btn-outline-primary btn-lg btn-block mt-4"
+      >
+        选择音乐
+      </button>
+      <button
+        id="import-music-button"
+        type="button"
+        class="btn btn-primary btn-lg btn-block mt-4"
+      >
+        导入音乐
+      </button>
+    </div>
+    <script>
+      require("./add.js");
+    </script>
+  </body>
+</html>
